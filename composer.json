@@ -1,0 +1,29 @@
+{
+    "name": "ilyahoilik/php-gtfs",
+    "description": "A PHP library for manipulating with GTFS Static",
+    "keywords": ["php", "gtfs", "transport"],
+    "homepage": "https://malanka.dev/php-gtfs",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ilya Hoilik",
+            "email": "ilya@hoilik.com",
+            "homepage": "https://hoilik.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/ilyahoilik/php-gtfs/issues",
+        "docs": "https://malanka.dev/php-gtfs"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "GTFS\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
