@@ -1,6 +1,6 @@
 {
     "name": "ilyahoilik/php-gtfs",
-    "description": "A PHP library for manipulating with GTFS Static",
+    "description": "A PHP library for manipulating with General Transit Feed Specification",
     "keywords": ["php", "gtfs", "transport"],
     "homepage": "https://malanka.dev/php-gtfs",
     "license": "MIT",
@@ -16,14 +16,24 @@
         "issues": "https://github.com/ilyahoilik/php-gtfs/issues",
         "docs": "https://malanka.dev/php-gtfs"
     },
+    "require": {
+        "ext-curl": "*",
+        "ext-zip": "*"
+    },
     "require-dev": {
-        "symfony/var-dumper": "^6.3"
+        "symfony/var-dumper": "^6.3",
+        "pestphp/pest": "^2.9"
     },
     "autoload": {
         "psr-4": {
-            "GTFS\\": "src/"
+            "GTFS\\Static\\": "src/"
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
 }
