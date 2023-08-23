@@ -19,11 +19,10 @@ composer require ilyahoilik/php-gtfs
 ## Basic Usage
 
 ```php
-$path = '/Users/ilya/gtfs.zip';
+$feed = new Feed('/Users/ilya/gtfs');
 
-foreach (Reader::read($path) as $entity)
-{
-    // process your entity...
+foreach ($feed->routes()->read() as $route) {
+    // process routes...
 }
 ```
 
